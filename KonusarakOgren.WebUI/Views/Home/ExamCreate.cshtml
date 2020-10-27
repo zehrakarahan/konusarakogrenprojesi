@@ -1,0 +1,51 @@
+﻿@model KonusarakOgren.WebUI.Models.ExamProperty 
+@{
+    ViewData["Title"] = "ExamCreate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{ 
+    int sayac = 1;
+}
+<div class="container">
+    <div>Makale Başlık=></div>
+    <div>@Model.makaletitle</div>
+    <div class="row">
+        @*@for (int i = 0; i < Model.MakaleContext.Count(); i++)
+        {
+            <div class="col-sm-12">
+                <p>@Model.MakaleContext[i]</p>
+            </div>
+        }*@
+
+    </div>
+    <div class="row">
+        @using (Html.BeginForm("ExamCreate", "Home", FormMethod.Post, new { @style = "background-color:white;margin-top:50px;" }))
+        {
+            @for (int i = 0; i < 4; i++)
+            {
+
+                <div class="col-md-12">
+                    <div class="col-md-12" style="float:left;"><input type="text" class="form-control" name="ExamQuestions[@i].Question" placeholder="@sayac . Soru" /></div>
+                    <br />
+                    <div class="col-md-6" style="float:left"><span>A)</span><input type="text" required class="form-control" name="ExamQuestions[@i].Aoption" /></div>
+                    <div class="col-md-6" style="float:left"><span>B)</span><input type="text" required class="form-control" name="ExamQuestions[@i].Boption" /></div>
+
+                    <div class="col-md-6" style="float:left"><span>C)</span><input type="text" required class="form-control" name="ExamQuestions[@i].Coption" /></div>
+                    <div class="col-md-6" style="float:left"><span>D)</span><input type="text" required class="form-control" name="ExamQuestions[@i].Doption" /></div>
+
+                    <center style="float:left; margin-top:30px; margin-bottom:30px;">
+                        <span style="float:left; margin-left:25px; margin-top:-15px;">Doğru Cevap Seç:</span> <input type="text" required style="float:right; width:450px; height:40px; margin-top:-20px;margin-left:40px; " class="form-control" name="ExamQuestions[@i].Response" />
+                    </center>
+
+                </div>
+                <br /><br />
+                sayac = sayac + 1;
+            }
+
+            <button class="btn btn-primary" style="width:200px; margin-left:30%; margin-right:50%;" type="submit">SINAV OLUŞTUR</button>
+
+        }
+    </div>
+</div>
+
+

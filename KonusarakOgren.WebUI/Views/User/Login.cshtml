@@ -1,0 +1,47 @@
+﻿@model KonusarakOgren.WebUI.Models.UserAccount
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="login100-pic js-tilt" data-tilt>
+    <img src="~/Login_v1/images/img-01.png" alt="IMG">
+</div>
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    <div>
+        @if (TempData["unregistereduser"]!=null)
+        {
+            <div style="background-color: #d10000">
+                @TempData["unregistereduser"]
+            </div>
+        }
+    </div>
+    <span class="login100-form-title">
+        Giriş Yap
+    </span>
+    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+        @Html.TextBoxFor(m=>m.UserName,new {@class= "input100",@type="text",@placeholder="Kullanıcı Adı", @required = "required" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <div class="wrap-input100 validate-input" data-validate="Password is required">
+        @Html.TextBoxFor(m => m.Password, new { @class = "input100", @type = "password", @placeholder = "Şifre", @required = "required" })
+        <span class="focus-input100"></span>
+        <span class="symbol-input100">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <div class="container-login100-form-btn">
+        <button class="login100-form-btn" type="submit">
+            Giriş Yap
+        </button>
+    </div>
+}
+
+
+

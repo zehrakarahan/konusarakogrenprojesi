@@ -1,0 +1,12 @@
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\bin\Debug\netcoreapp3.1\KonusarakOgren.Domain.deps.json
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\bin\Debug\netcoreapp3.1\KonusarakOgren.Domain.dll
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.csprojAssemblyReference.cache
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.AssemblyInfoInputs.cache
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.AssemblyInfo.cs
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\bin\Debug\netcoreapp3.1\KonusarakOgren.Domain.runtimeconfig.json
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\bin\Debug\netcoreapp3.1\KonusarakOgren.Domain.runtimeconfig.dev.json
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.genruntimeconfig.cache
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\bin\Debug\netcoreapp3.1\KonusarakOgren.Domain.pdb
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.dll
+C:\Users\zehra\source\repos\KonusarakOgren\KonusarakOgren.Domain\obj\Debug\netcoreapp3.1\KonusarakOgren.Domain.pdb
